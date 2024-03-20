@@ -18,6 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
         ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: 'true'
+        DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}        
 
     steps:
     - uses: actions/checkout@v3
